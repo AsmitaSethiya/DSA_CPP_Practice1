@@ -1,4 +1,7 @@
-int findUnique(int *arr, int size)
+#include<iostream>
+using namespace std;
+
+int findUnique(int arr[], int size)
 {
     //Write your code here
     int ans = 0;
@@ -11,23 +14,14 @@ int findUnique(int *arr, int size)
     return ans;
     
 }
-
-
 int main()
 {
-  int size;
-  cin >> size;
   
-  int n[10];
+  int n[10] = {1, 2, 2, 1, 3, 4, 3};
   
-  for(int i = 0; i < size; i++)
-  {
-    cin >> n[i] >> " " ; 
-  }
+  int ans = findUnique(n, 7);
   
-  int ans = findUnique(n, size);
-  
-  cout << " The unique element is : >> ans;
+  cout << " The unique element is :" << ans;
   
   return 0;
 }
